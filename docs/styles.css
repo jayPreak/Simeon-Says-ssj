@@ -1,13 +1,24 @@
+@font-face {
+  font-family: 'Saiyan-Sans';
+  src: url('Saiyan-Sans.ttf');
+}
+
+
+
 body {
   text-align: center;
   background-color: #011F3F;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-family: 'Saiyan-Sans', cursive;
+  font-size: 4rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: #efdf2e;
 }
 
 .container {
@@ -24,6 +35,9 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+
+  background-position: center;
+  background-size: cover;
 }
 
 .game-over {
@@ -32,19 +46,19 @@ body {
 }
 
 .red {
-  background-color: red;
+  background-image: url('images/red.jpg');
 }
 
-.green {
-  background-color: green;
+.white {
+  background-image: url('images/white.jpg');
 }
 
 .blue {
-  background-color: blue;
+  background-image: url('images/blue.jpg');
 }
 
 .yellow {
-  background-color: yellow;
+  background-image: url('images/yellow.jpg');
 }
 
 .pressed {
